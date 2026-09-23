@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Start Node application
-        run: npm start
+      - name: Run tests
+        run: npm run test
 
       - name: Build Docker image
-        run: docker build -t devops-node-app . 
+        run: docker build -t devops-node-app .
